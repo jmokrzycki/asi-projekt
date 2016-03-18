@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+100.times do |n|
+    a = Film.new
+    a.title =  Faker::Superhero.name 
+    a.premiere =  Faker::StarWars.quote 
+    a.save
+end

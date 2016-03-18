@@ -1,5 +1,9 @@
 <h1>New Film</h1>
+<% if user_signed_in? %>
 
 <%= render 'form', film: @film %>
-
-<%= link_to 'Back', films_path %>
+    
+<%= link_to 'Back', films_path,  class: "btn btn-default"  %>
+<% else  %>
+	<h2> Not logged </h2>
+<% end %>

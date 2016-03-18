@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+#Run server before launchung your app, with this command:
+#rails server -p $PORT -b $IP
 gem 'rails', '>= 5.0.0.beta2', '< 5.1'
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
@@ -14,7 +15,8 @@ gem 'bcrypt', '3.1.10'
 gem 'cancancan', '~> 1.13', '>= 1.13.1'
 #Version on rubygems not supporting rails 5.0! Must pull from git repo!
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
-
+gem 'faker'
+gem 'will_paginate'
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
